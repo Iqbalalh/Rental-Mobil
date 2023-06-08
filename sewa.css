@@ -1,0 +1,92 @@
+.bg {
+    background-image: url('../img/car_bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.color-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,.2);
+}
+
+.card {
+    height: 200px;
+    width: 300px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    background-color: black;
+}
+
+img {
+    height: 200px;
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.merk{
+    margin: 10px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    bottom: 0px;
+}
+
+p {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    background: rgb(27, 27, 27, .5);
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+    transition: .5s;
+}
+
+.insight {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0px;
+    background: rgb(27, 27, 27, .5);
+    visibility: visible;
+}
+
+.card-body {
+    visibility: hidden;
+    bottom: 0px;
+    box-sizing: border-box;
+    position: absolute;
+
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover .card-body{
+    visibility: visible;
+    height: 100px;
+    width: 290px;
+    bottom: 0px;
+    background: black;
+    opacity: 80%;
+}
+
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+
+.card:hover .insight{
+    visibility: hidden;
+}
+
+.card:hover img{
+    transform: scale(1.1);
+}
+
+nav {
+    color: transparent;
+}

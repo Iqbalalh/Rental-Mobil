@@ -1,0 +1,76 @@
+.bg {
+    background-image: url('../img/car_bg.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+}
+
+p {
+    animation: fadeIn 1s forwards;
+}
+
+.color-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,.2);
+}
+
+nav {
+    color: transparent;
+}
+
+.index-h1 {
+    justify-content: center;
+    margin-top: 50px;
+    color: white;
+    font-size: 90px;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+
+
+@media (max-width: 768px){
+    .bg {
+        min-height: 100vh;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .get-started {
+        animation: fadeIn 1s forwards;
+        justify-content: center;
+        font-size: 40px;
+        color: white;
+        font-weight: lighter;
+    }
+
+    .get-started:hover {
+        transform: scale(1.2);
+    }
+
+    .index-h1 {
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .navbar {
+        background-color: black;
+        opacity: 70%;
+    }
+    
+}
